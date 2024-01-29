@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="box" id="box">
+        <button id="b">click</button>
+    </div>
+    <script>
+    const btn = document.getElementById('b');
+    const box = document.getElementById('box');
+    
+    function change(){
+        box.classList.add('trans');
+        box.style.background = "url('dune.jpg')"; // Replace with the path to your image
+        console.log(box);
+    }
+    
+    btn.addEventListener('click', change);
+    </script>
+    
+</body>
+</html>
